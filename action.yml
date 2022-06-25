@@ -1,0 +1,8 @@
+name: 'Maid'
+description: 'Maid is a containerized deployment platform for Laravel'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'terminal'
+  color: 'blue'
