@@ -1,4 +1,4 @@
-name: 'Maid'
+name: 'Maid CLI'
 description: 'Maid is a containerized deployment platform for Laravel'
 runs:
   using: 'docker'
