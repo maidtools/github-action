@@ -1,6 +1,10 @@
 # Container image that runs your code
 FROM composer:2.1.11
 
+RUN export DEBIAN_FRONTEND=noninteractive &&
+    curl -fsSL https://get.docker.com -o get-docker.sh &&
+    sudo sh get-docker.sh
+
 # Copies your code file from your action repository to the filesystem path `/` of the container
 COPY entrypoint.sh /entrypoint.sh
 
